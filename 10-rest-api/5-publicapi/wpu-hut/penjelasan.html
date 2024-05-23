@@ -1,0 +1,18 @@
+<!-- 
+    Same-origin Policy
+    - Kebijakan browser untuk mengakses dan menampilkan data/ script/ document dari tempat luar domain-nya
+    - membuat kita tidak bisa mengakses data(.json) dari luar domain / website kita
+ 
+    ketika kita ingin membuat REST server maka orang lain harus bisa akses caranya melakukan konfigurasi CORS
+    CORS (Cross Origin Resource Sharing)
+    - Mekanisme yang membuat kita dapat mengakses sebuah resource(data, document, script) dari luar domain
+    
+    - Modifikasi Access-Control-Allow-Origin
+    - Membuat file.htaccess
+    <IfModule mod_headers.c>
+        Header set Access-Control-Allow-Origin "*"
+    </IfModule>
+    kalau mengakses punya orang tidak masalah
+
+    ada satu teknik lagi disebut JSONP
+-->

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+
+  <script type="text/babel">
+    const container = document.querySelector('#root');
+    const root = ReactDOM.createRoot(container);
+
+    // menggunakan destructuring jadi tidak berbentuk objek lagi
+    // function Header({name, image}) {
+    //   return (
+    //   <>
+    //     <h1 className="heading">Belajar Bareng {name} 🚀</h1>
+    //     <img src={`img/${image}`} alt="image" width="80" />
+    //     <p onClick={e => {alert("Ok!")}}>Bealajar react itu mudah dan menyenangkan bukan?</p>
+    //   </>
+    //   )
+    // }
+    
+    function Header(props) {
+      return (
+      <>
+        <h1 className="heading">Belajar Bareng {props.name} 🚀</h1>
+        <img src={`img/${props.image}`} alt="image" width="80" />
+        <p onClick={e => {alert("Ok!")}}>Bealajar react itu mudah dan menyenangkan bukan?</p>
+      </>
+      )
+    }
+
+    function HomePage() {
+      const students = ['Sandhika', 'Doddy', 'Erik'];
+      const [likes, setLikes] = React.useState(0);
+
+      function handleClick() {
+        setLikes(likes + 1)
+      }
+
+      return (
+        <div>
+          <Header name="WPU" image="image.jpg" />
+          <ul>
+            {students.map((student) => (
+                <li key={student}>{student}</li>
+            ))}  
+          </ul>
+          <button onClick={handleClick}>Like  ({likes})</button>
+        </div>
+      )
+    }
+
+    root.render(<HomePage />);
+  </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+MongoDB (https://mongodb.com)
+MongoDB diambil dari kata Humongous Database, Humongous artinya besar karena database ini bisa mengelola data yang sangat banyak
+diambillah kata Mongo,
+
+MongoDB?
+- MongoDB is a document database with the scalabity and flexibility that you want with querying and indexing that you need
+- MongoDB adlaah sebuah database berbasis dokumen yang memiliki skalabilitas dan fleksibilitas yang kita inginkan dan juga
+  memiliki fitur query dan indexing yang kita butuhkan
+
+Database Berbasis dokumen
+- salah satu tipe dari NoSQL Database
+
+NOSQL Database
+- "Noy Only" SQLite
+- Scehamless / Flexibel Schema
+- Denormalization
+- Non-relational Database
+- Unstructured, semi-structured, structured data
+
+Tipe NoSQL Database
+- Key-value Store
+  * Redis
+- document Based
+  * MongoDB, CouchDB
+- Column-oriented Database
+  * HBase, Cassandara
+- Graph database
+  * Neo4j
+
+Terminologi pada SQL vs No SQL
+
+               SQL (database)                                             NoSQL (Database) 
+                                                                - Bentuk datanya sangat mirip dengan JSON (Javascript Object Notation)
+- Data dibawah disebut dengan Table                             - Data dibawah disebu dengan Collection
+- 1 Baris data disebut dengan "row / record"                    - 1 Data disebut dengan Dokumen
+- nip, nama, email biasa disebut dengan column / field          - disebut dengan field saja
+_______________________________________________________   
+| id |    nip    |    nama        |    email           |         [
+|----|-----------|----------------|--------------------|            {
+| 1  | 1234122   | sandhika galih | sandhika@gmail.com |              "id": "1",
+| 2  | 1234123   | ananda arya    | ananda@gmail.com   |              "nama": "ananda", 
+|------------------------------------------------------|              "nrp": "1234122",
+                                                                      "email": "ananda@gmail.com,
+                                                                    }
+                                                                ]
+
+
+
+Konsep Embedded Document (Denormalization)
+{
+    "book_id": 1,
+    "isbn": "971238213",
+    "title": "ELoquent Javascript, Second edition",
+    "author: "Marijn Haverbeke",
+},
+{
+    "book_id": 2,
+    "isbn": "97123823",
+    "title": "Learning Javascript Design Pattern",
+    "author: "Addy Osmani",
+    "publisher": {
+        "publisher_id" : 21,
+        "name": "o Reilly Media",
+    } // ini disebut dengan Embedded Document, karena ini juga disebut dengan Schemaless
+},
+
+Kalau kita ingin menerapkan ini di SQL, tentu saja kita harus membuat tabel baru, jadi kita punya table buku, dan publisher
+dimana kita akan punya relationshipnya, kita harus punya foreign key di tabel buku yang mengarah ke primary key di table publisher.
+Tapi untuk NoSQL tidak seperti itu kita cukup menggunakan Embedded Document
+
+Kenapa MongoDB?
+- karena format datanya JSON atau diMongodb disebut dengan (BSON) B = Binary
+- Javascript
+- MERN, MEVN, MEAN (MongonDB, Express, React / Vue / Angular, NodeJS)
+
+
+
+                                                        

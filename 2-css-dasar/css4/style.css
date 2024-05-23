@@ -1,0 +1,17 @@
+h1{
+	color: red;
+	font-style: italic, oblique; /* mengatur jenis font*/
+	font-variant: small-caps; /* mengubah font menjadi smallcaps*/
+	font-weight: bold; /* mengatur ketebalan font*/
+	font-size: 100px; /* mengatur ukuran font*/
+	line-height: 18px; /* mengatur jarak spasi antar baris*/
+	font-family: arial, Calibri; /* mengatur gaya font*/
+	
+}
+p{
+	font-style: italic;
+	font-variant: small-caps, normal;
+	font-weight: bold;
+	line-height: 100px;
+	font-family: arial, Calibri;
+}

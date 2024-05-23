@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+
+  <script type="text/babel">
+    const container = document.querySelector('#root');
+    const root = ReactDOM.createRoot(container);
+    root.render(
+      <>
+        <h1 className="heading">Belajar Reactjs di WPU 🚀</h1>
+        <img src="img/image.jpg" alt="image" width="80" />
+        <p onClick={e => {alert("Ok!")}}>Bealajar react itu mudah dan menyenangkan bukan?</p>
+      </>
+    );
+  </script>
+</body>
+</html>

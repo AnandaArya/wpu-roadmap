@@ -1,0 +1,56 @@
+https://www.mongodb.com/
+Di sini kita terhubung ke MongoDBnya dengan 2 cara, pertama kita bisa download servernya untuk di install secara Local untuk terhubung dengan database kita di Sistem Operasi kita,
+kedua kita bisa terkoneksi secara online dengan menggunakan MongoDB Cloud atau MongoDB Atlas
+
+Lebih jelasnya bisa tonton Videonya di YT WEB PROGRAMMING UNPAS 
+
+MongoDB Enterprise > show databases // perintah untuk melihat database
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+
+
+MongoDB Enterprise > use wpu // perintah untuk menggunakan database
+switched to db wpu
+
+
+MongoDB Enterprise > db.createCollection('mahasiswa') // perintah untuk membuat table / collections baru
+{ "ok" : 1 }
+
+
+MongoDB Enterprise > show collections perintah untuk melihat collections
+mahasiswa
+
+MongoDB Enterprise > db.mahasiswa.insertOne({nama: "Ananda Arya", email: "ananda@gmail.com"}) // perintah untuk mengisi data collections
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("626892fd6464f86a729bf024")
+}
+
+
+MongoDB Enterprise > db.mahasiswa.find() // perintah untuk melihat isi collections
+{ "_id" : ObjectId("626892fd6464f86a729bf024"), "nama" : "Ananda Arya", "email" : "ananda@gmail.com" }
+
+
+// perintah untuk mengisi banyak data collections sekaligus
+MongoDB Enterprise > db.mahasiswa.insertMany([
+...     {nama: "Doddy Ferdiansyah", email: "doddy@gmail.com"},
+...     {nama: "Erik", email: "erik@gmail.com"},
+... ])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("626894706464f86a729bf025"),
+                ObjectId("626894706464f86a729bf026")
+        ]
+}
+
+
+MongoDB Enterprise > db.mahasiswa.find() // perintah untuk melihat isi collections
+{ "_id" : ObjectId("626892fd6464f86a729bf024"), "nama" : "Ananda Arya", "email" : "ananda@gmail.com" }
+{ "_id" : ObjectId("626894706464f86a729bf025"), "nama" : "Doddy Ferdiansyah", "email" : "doddy@gmail.com" }
+{ "_id" : ObjectId("626894706464f86a729bf026"), "nama" : "Erik", "email" : "erik@gmail.com" }
+
+
+- Kita juga bisa menggunakan MongoDBCompass atau GUInya dari MongoDB agar kita tidak perlu mengentikan perintah seperti diatas
+- Selain itu kita bisa menggunakan Atlas sebagai database kita yang tersimpan di cloud miliknya MongoDB

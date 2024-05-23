@@ -1,0 +1,83 @@
+body {
+    background-color: rgba(230, 230, 230, 0.3);
+    font-family: 'Roboto Mono', sans-serif;
+
+}
+
+.navbar {
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-nav {
+    text-transform: uppercase;
+}
+
+
+.card {
+    min-height: 132px;
+}
+
+
+
+/* TABLE */
+.tableFixHead { 
+    overflow-y: auto; 
+    height: 600px; 
+}
+.tableFixHead thead th { 
+    position: sticky; top: 0px; 
+}
+
+/* Just common table stuff. Really. */
+table  { 
+    border-collapse: collapse; width: 100%;
+    background-color: white;
+}
+th, td { 
+    padding: 8px 16px; 
+}
+th { 
+    background:white;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.kolomData {
+    background-color: white;
+}
+
+/* END TABLE */
+
+
+.infoPanel {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.daftarRS a:hover, .infoPenyakit a:hover {
+    color: white!important;
+    text-decoration: none!important;
+}
+
+
+footer p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+
+footer a {
+    color: white;
+}
+
+
+footer a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* CSS Responsive */
+@media (max-width: 768px) { 
+
+    .judulTable {
+        font-size: 13px;
+    }
+
+ }

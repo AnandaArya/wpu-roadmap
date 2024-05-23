@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        SESSION
+        "Mekanisme penyimpanan informasi ke dalam variabel agar 
+        bisa digunakan di lebih dari satu halaman"
+
+        "Informasi tersimpan di server"
+
+        SESSION VS COOKIE
+        bedanya SESSION = di simpan di server
+        sedang COOKIE = di simpan di client (di browsernya)
+
+        akan di tangani oleh $_SESSION
+        ada syaratnya harus dijalan knan dulu oleh sebuah session_start()
+    
+        session_destroy() untuk menghilangkan session
+
+        COOKIE
+        - Mengenali user
+        - Shopping cart
+        - Personalisasi
+
+        Karena di simpan di dalam client / browser. dan client bisa memanipulasi
+        itu ini bisa menjadi celah keamanan, apalagi kalau kita gunakan untuk melengkapi fitur login
+
+        $_COOKIE variabel superglobals untuk kita gunakan untuk mengakses nilai cookie di browser kita
+        dan cara membuatnya harus di panggil dulu
+        setcookie()
+
+        COOKIE hanyar berlaku 1 sesi samass seperti SESSION
+        kita bisa membeitahui browsernya berapa lama COOKIENya hilang
+
+        setcookie('nama', 'ananda', time()+60);
+
+
+     -->
+</body>
+</html>

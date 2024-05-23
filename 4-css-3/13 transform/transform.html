@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+
+			body{
+				margin: 0px 20px;
+
+			}
+
+			p{
+				font-size: 20px;
+				text-align: center;	
+			}
+			
+			/* scale(angka), scakeX(angka), scaleY(angka)
+			rotate(deg), rotateX(deg), rotateY(deg
+			skew(deg), skewX(deg), skewY(deg)
+			translat(px), tarnslateX(px), translateY(angka)*/
+
+			.satu{
+				width: 200px;
+				height: 200px;
+				background-color: lightblue;
+				margin: 50px auto 0;
+
+			}
+
+			.satu:hover{
+				transform: scale(1.5);
+			}
+			.dua {
+				width: 200px;
+				height: 200px;
+				background-color: lightgreen;
+				margin: 50px auto 0;
+			}
+
+			.dua:hover{
+				transform: rotate(-45deg); 
+			}
+
+			.tiga{
+				width: 200px;
+				height: 200px;
+				background-color: yellow;
+				margin: 50px auto 0px;
+				transition: 1s;
+			}
+
+			.tiga:hover{
+				transform: rotateX(180deg) rotateX(180deg) rotateY(180deg);
+			}
+
+			.empat{
+				width: 200px;
+				height: 200px;
+				background-color: purple;
+				margin: 50px auto 0px;
+				
+			}
+
+			.empat:hover{
+				transform: skewY(30deg) /* skew = skewX sama saja bedanya ketika dikasih skewY akan condong kearah vertikal*/;
+			}
+
+			.lima{
+				width: 200px;
+				height: 200px;
+				background-color: purple;
+				margin: 50px auto 0px;
+				transition: 1s;
+			}
+
+			.lima:hover{
+				transform: translateX(50px) translateY(100px); /*sama saja dengan position absolute tetapi j=ini lebi baik*/
+				/*shotdhand transform: translate(50px, 100px); */
+			}
+
+			.enam{
+				width: 200px;
+				height: 200px;
+				background-color: lightgreen;
+				margin: 50px auto 0;
+				transition: 1s;
+			}
+
+			.enam:hover{
+				transform: scale(3) rotate(360deg);
+			}
+
+			.tujuh{
+				width: 200px;
+				height: 200px;
+				background-color: lightskyblue;
+				margin: 50px auto 0;
+				transition: 1s			
+			}
+
+			.tujuh:hover{
+				transform: scale(3) rotate(360deg) skewY(30deg) translate(50px,-100px);
+			}
+			
+		</style>
+	</head>
+	<body>
+
+	<div class="satu"></div>
+	<h1>1. transfom scale</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<div class="dua"></div>
+	<h1>2. rotate -45deg</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<div class="tiga"></div>
+	<h1>3. rotate rotateX rotateY</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<div class="empat"></div>
+	<h1>4. skewY</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+	<div class="lima"></div>
+	<h1>5. translate 50px</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+	<div class="enam"></div>
+	<h1>6. scale(3) rotate 360</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<div class="tujuh"></div>
+	<h1>7. scale(3) rotate(360deg) skewY(30deg) translate(50px, -100px)</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+	</body>
+</html>
+

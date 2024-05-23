@@ -1,0 +1,15 @@
+div{
+	width: 300px;
+	height: 300px;
+	background-color: coral;
+	margin: 20px auto;
+	padding: 50px; /* berarti meberi jarak antara tulisan dan box sama seperti margin*/
+	/*border:5px solid black;  border: width style color;
+											 style= solid, dotted, dashed, double*/
+	border-left: 6px solid black;
+	border-right: 6px dotted blue;
+	
+
+
+/* jika memakai padding pada sebuah box maka lebarnya juga bertambah 300px+ 50px+50px =400px*/	
+}

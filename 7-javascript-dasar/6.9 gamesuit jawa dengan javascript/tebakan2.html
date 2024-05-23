@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    
+    
+var tanya = true;
+var hasil = '';
+
+ while(tanya) {
+    var comp = Math.floor(Math.random() * 10) + 1 ;
+    for(var i = 3; i > 0; i--) {
+        var p = prompt('Silahkan masukan angka (1-10) Anda memili ' + i + ' x Kesempatan');
+        if(p == comp) {
+            hasil = 'Anda benar ';
+            alert(hasil + 'Tebakan anda ' + p + ' Dan computer' + comp);
+            i = 0;
+        } else if(p < comp) {
+            hasil = 'Tebakan terlalu kecil';
+        } else {
+            hasil = 'Tebakan terlalu besar ';
+        }
+
+        if(i > 0) {
+            alert('Tebakan anda ' + p + ' Hasilnya ' + hasil );
+        } 
+        if(i == 0) {
+            alert('Tebakan Anda sudah habis');
+        }
+    }
+    tanya = confirm('Main lagi?');
+}
+
+</script>
+</body>
+</html>

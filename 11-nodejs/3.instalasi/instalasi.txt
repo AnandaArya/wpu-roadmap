@@ -1,0 +1,3 @@
+Untuk instalasi silahkan kunjungi, disarankan mengguanakan versi LTS (Long Time Support) karena ini yang paling stabil
+https://nodejs.org/en/download/
+

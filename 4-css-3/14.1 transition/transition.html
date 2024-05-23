@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">	
+		<title></title>			
+		<!--
+		transition:
+		[property] <durasi> [fungsi] [delay]
+		  
+		animatable properties		top left bottom right
+		background-color			margin padding
+		background-position			width height
+		background-size				opacity
+		border						transform
+		color 						word-spacing
+		filter						letter-spacing
+		font-size					...
+		line-height
+		
+		non-animatable properties
+		font-family
+		display
+		position
+		  -->
+
+
+		<style>	
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		.container{
+			width: 900px;
+			margin: 10px auto;
+			border: 5px solid black;
+		}
+
+
+
+		.satu{
+			width: 100px;
+			height: 100px;
+			background-color: salmon;
+			transition: margin-left 1s;
+		}			
+		
+		.container:hover .satu{
+			transform: rotate(720deg);
+			margin-left: 800px;
+			background-color: royalblue;
+		}
+
+		.dua{
+			width: 100px;
+			height: 100px;
+			background-color: yellow;
+			transition: 1s;
+		}
+
+		.container:hover .dua{
+			transform: rotate(360deg);
+			margin-left: 800px;
+			background-color: blueviolet;
+		}
+
+		</style>
+	</head>
+	<body>
+
+	<div class="container">
+		<div class="satu"></div>
+		<div class="dua"></div>	
+	</div>
+
+	</body>
+</html>
+
+<

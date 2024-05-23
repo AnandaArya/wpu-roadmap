@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 600px;
+            height: 150px;
+            border: 5px solid #333;
+            margin: 30px auto;
+            padding: 5px;
+            box-sizing: border-box;
+            display: flex;
+            /* flex-direction: column-reverse; */
+            /* flex-wrap: wrap; */
+            /* justify-content: space-evenly; */
+            /* align-items: flex-start; */
+        }
+
+
+        .container div {
+            background-color: lightblue;
+            margin: 2px;
+            flex: 1px;
+        }
+
+        .container div.dua {
+            flex: 3;
+            align-self: center;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <!-- 
+        flex-direction = mengatur arah / urutan dari items dalam cotainer
+        flex-direction: row| row-reverse- | column | column-reverse
+
+        flex-wrap = Secara default, semua items di dalam container akan berada pada suatu baris meskipun ukurannya sudah tidak cukup, wrap memunkingkan 
+        untuk memindahkan items ke baris dibawahnya
+        flex-wrap: nowrap | wrap | wrap-reverse
+
+        justify-content:
+        flex-start| flex-end| center| space-between| space-around | space-evenly
+
+
+        align-item = mengatur perilaku kesejajaran item terhadap cross axis
+        align-items: flex-start | flex-end | center | stretch | baseline
+
+        align-content = mengatur jarak antar items terhadap cross axis (hanyar berfungsi ketika items lebih dari 1 baris)
+        align-content: flex-start| flex-end| center| space-between| space-around | space-evenly 
+
+        property pada items
+        order = untuk mengatur urutan dari elemennya
+        .satu { order: 3; } /*defaultnya awalnya semua 0 */
+        .dua { order: 4; }
+        .tiga { order: 2; }
+        .empat { order: 1; }
+
+        flex-grow / flex = untuk mengatur ukuran dari si itemsnya
+
+        align-self = mengatur perilaku penjajaran sebuah item yang spesifik terhadap cross axis (khusus untuk 1 elemen)
+        alifn-self: auto| flex-start | flex-end | center | baseline  | stretch;
+
+
+     -->
+
+    <div class="container">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+    </div>
+    
+</body>
+</html>

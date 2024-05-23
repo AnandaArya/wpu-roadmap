@@ -1,0 +1,30 @@
+[
+    { 
+        "nama" : "Yudha",
+        "umur" : 16,
+        "nrp" : "3432432",
+        "lulus" : true,
+        "hooby" : [
+            "coding",
+            "gaming"
+        ],
+        "pembimbing" : {
+            "pembimbing1" : "Rifqi",
+            "pembimbing2" : "Ananta"
+        }
+    },
+    { 
+        "nama" : "Yudha",
+        "umur" : 16,
+        "nrp" : "3432432",
+        "lulus" : true,
+        "hooby" : [
+            "coding",
+            "gaming"
+        ],
+        "pembimbing" : {
+            "pembimbing1" : "Rifqi",
+            "pembimbing2" : "Ananta"
+        }
+    }
+]

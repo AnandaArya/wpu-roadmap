@@ -1,0 +1,43 @@
+Apa itu NodeJS?
+
+"Node.js is a Javascrit runtime built on Chrome's v8 JavaScript Engine"
+"An Asnchronous event-driven Javascrit runtime, designed to build scalable network applications"
+-nodejs.org
+
+Javascrit bisa berjalan di web browser karena ada yang namanya Javascrit V8
+Sebetulnya setiap web browser itu punya Javascrit Enginenya masing-masing
+di Chrome (v8), Mozilla (SpiderMonkey), Microsoft(Chakra).
+lalu kenapa NodeJS memilih v8 Sebagai Enginenya? itu karena perilakunya memang sesuai yang diharapkan
+oleh pembuatnya (Ryan Dahl) dan V8 Engine adalah yang paling cepat
+
+Javascrit berjalan di web browser contextnya adalah DOM -> (DOM TREE)
+document.getElementById()
+document.getElementByClassName()
+document.querySelector()
+setelah V8 Enginenya dikeluarkan oleh NodeJS ini, jadi contextnya bukan web browser lagi
+jadi Node atau Enginenya tidak punya lagi akses ke script diatas
+
+tapi sekarang kalau pakai Node sudah beda
+kalau ingin ngakses FileSystem (fs.writeFile()), kita bisa tau menggunakan OS apa (os.platform()), 
+kita bisa tau alamat dimana kita menyimpan web server (http.createServer())
+
+Cara kerja NodeJS
+Asynchronous, Non-Blocking, Single Thread
+
+konsep Asynchronous
+bayangkan kita melihat sebuah restoran punya 2 meja, setiap meja ada customer, dapur, waiter. didunia
+yang ideal itu akan lebih baik skenarionya ada customer datang ke meja-1, maka idealnya waiter akan
+datang ke meja-1 untuk mencatat pesanannya dan membawa ke dapur, misal (meja-1 order nasi goreng), yang dilakukan koki (dapur)
+membuat pesanannya tapi si waiternya menunggu didapur, begitu nasi gorengnya selesai akan di ambil oleh si waiter
+dan akan di kembalikan lagi ke meja-1. waiternya kembali ke posisinya (dapur).
+
+kita anggap si watiter tadi adalah threadnya
+idealnya satu waiter hanya menangani satu meja saja, sekarang masalahnya ada meja-2 memesan makanan tetapi meja-1 belum selesai.?
+solusinya gimana? yaitu dengan menambah waiter(thread)nya, waiter kedua hanya melayani meja-2. bagaimana kalau meja-nya banyak?
+bayangkan kalau meja-nya banyak. problemnya adalah gimana kalau tidak ada pelanggan. maka akan banyak resource terbuang
+
+illustrasi diatas adalah multithread dan synchronous, jadi kita harus menunggu sampai satu proses selesai
+
+
+
+

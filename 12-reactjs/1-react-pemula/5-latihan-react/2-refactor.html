@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+
+  <script type="text/babel">
+    const container = document.querySelector("#root");
+    const root = ReactDOM.createRoot(container);
+
+    function MyButton({ text, onClick, counter }) {
+      let disabled = false;
+
+      if (counter >= 10) {
+        disabled = true;
+      }
+
+      return (
+        <button onClick={onClick} disabled={disabled}>
+          {text}
+        </button>
+      );
+    }
+
+
+    function MyCounter({ counter }) {
+        return (
+          <span>{counter}</span>
+        );
+      }
+
+
+      function HomePage() {
+        const [counter, setCounter] = React.useState(0);
+
+        function decrement() {
+          setCounter(counter - 1);
+        }
+
+        function increment() {
+          setCounter(counter + 1);
+        }
+
+        function reset() {
+          setCounter(0);
+        }
+
+        return (
+          <>
+            <MyButton text={'-'} onClick={decrement} counter={counter} />
+            <MyCounter counter={counter} /> {/* Updated component usage */}
+            <MyButton text={'+'} onClick={increment} counter={counter} />
+            <MyButton text={'Reset'} onClick={reset} counter={counter} />
+          </>
+        );
+      }
+
+
+    root.render(<HomePage />);
+  </script>
+</body>
+</html>

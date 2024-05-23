@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ddd;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+                    'header header header header'
+                    'posttitle posttitle posttitle postitle'
+                    'postmeta postmeta postmeta postmeta'
+                    'maincontent maincontent maincontent maincontent'
+                    'mainimage mainimage mainimage mainimage'
+                    'footer footer footer footer';
+            /* grid-template-columns: 1fr max-content 1fr; */
+        }
+
+        .item {
+            width: 100%;
+            background-color: rgb(138, 209, 254);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 100px;
+            box-sizing: border-box;
+        }
+
+        /* .item:nth-child(even) {
+            background-color: rgb(255, 142, 142);
+        } */
+
+        .header {
+            grid-area: header;
+            background-color: rgb(197, 106, 182);
+        }
+
+        .posttitle {
+            grid-area: posttitle;
+            background-color: lightblue;
+        }
+
+        .postmeta {
+            grid-area: postmeta;
+            background-color: rgb(133, 236, 133);
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: rgb(255, 255, 188);
+        }
+        
+
+        .maincontent {
+            grid-area: maincontent;
+            background-color: rgb(177, 255, 177);
+        }
+        .mainimage {
+            grid-area: mainimage;
+            background-color: rgb(227, 240, 51);
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: lightgray;
+        }
+
+        /* Responsive breakpoint */
+
+        @media only screen and (min-width: 768px) {
+            .container {
+                grid-template-areas: 
+                    'header header header header'
+                    'posttitle posttitle posttitle sidebar'
+                    'postmeta maincontent maincontent sidebar'
+                    'postmeta mainimage mainimage sidebar'
+                    'footer footer footer footer';
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item header">Header</div>
+        <div class="item posttitle">posttitle</div>
+        <div class="item sidebar">sidebar</div>
+        <div class="item postmeta">postmeta</div>
+        <div class="item maincontent">maincontent</div>
+        <div class="item mainimage">mainimage</div>
+        <div class="item footer">footer</div>
+    </div>
+</body>
+</html>

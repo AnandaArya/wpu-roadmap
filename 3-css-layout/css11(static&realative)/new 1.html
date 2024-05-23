@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 200px;
+				height: 200px;
+			}
+			/*  margin-left: 30px; margin-top: -30px;  maka dia akan memperngaruhi elemen disektiarnya
+			itulah gunanya position: non static akan seolah berada didemnsi lainnya  (maju satu dimensi) dan ruangangan kosong ditempat sebelumnya masih ada, jika menggunakan relative, maka dia sama diposisi sebelumnya  valuenya= static, relative, absoulte, fixed*/
+													
+
+			.satu{
+				background-color: lightgreen;
+			}
+
+			.dua{
+				background-color: violet;	
+				position: relative;
+				top: 30px;	
+			}
+
+			.tiga{
+				background-color: gold;
+			}
+
+		</style>
+	</head>
+
+	<body>
+	<div class="satu"></div>
+	<div class="dua"></div>
+	<div class="tiga"></div>
+	</body>
+</html>

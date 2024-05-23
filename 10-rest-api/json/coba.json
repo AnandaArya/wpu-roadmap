@@ -1,0 +1,32 @@
+[
+    {
+        "nama" : "Ananda",
+        "umur" : 16,
+        "nrp" : "123123123",
+        "lulus" : true,
+        "hobby" : [
+            "coding",
+            "gaming"
+        ],
+        "pembimbing" : {
+            "pembimbing1" : "Doddy Ferdiansyah",
+            "pembimbing2" : "Erik Seha"
+        }
+    },
+
+    {
+        "nama" : "Ananda",
+        "umur" : 16,
+        "nrp" : "123123123",
+        "lulus" : true,
+        "hobby" : [
+            "coding",
+            "gaming"
+        ],
+        "pembimbing" : {
+            "pembimbing1" : "Doddy Ferdiansyah",
+            "pembimbing2" : "Erik Seha"
+        }
+    }
+
+]

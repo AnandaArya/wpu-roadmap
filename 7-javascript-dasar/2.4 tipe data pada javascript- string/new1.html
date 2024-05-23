@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	<!--
+	STRING
+	(" ") sama saja dengan ('') plain text
+
+	"hari ini adalah hari jum'at "
+
+	'kami sedang mengadakan kegiatan  "Gerakan Memungut Sampah" '
+
+	"Arya"
+	"Arya"
+	'"gerakan pungut sampah"' dilakukan dihari jum'at'
+	 Uncaught SyntaxError: Unexpected identifier
+
+	 maka dibutuhkan escape character ( \' ) ( \" )
+	 contoh:
+	 '"Gerakan Pungut Sampah" dilaksanakan di hari jum\' at'
+	 '"Gerakan Memungut Sampah", Pada Hari Jum\' at'
+	""Gerakan Memungut Sampah", Pada Hari Jum' at"
+	'ini adalah hari Jum\'at'
+	"ini adalah hari Jum'at"
+	'ini adalah hari \n\n Jum\'at'
+	"ini adalah hari 
+
+ Jum'at"
+	----------------------------------------------------------
+	Ecape Character 
+	\0 = karakter NULL
+	\' = '
+	\" = "
+	\\ = \
+	\n = new line/baris baru
+	\t = tab
+	\b = backspace
+	\uXXXX = unicode bisa di cari diggole /unicode
+	'\u00a9'
+	"©"
+
+	'\u2122'
+	"™"
+
+	'ini adalah hari \n jum\'at'
+	"ini adalah hari 
+	 jum'at"
+
+	'ini adalah \n\n hari jum\'at'
+	"ini adalah 
+
+	 hari jum'at"
+	--------------------------------
+	.lenght = menghitung jumlah karakter yang ada didalam string (termasuk spasi)
+	"Ananda Arya".length
+	11
+
+	var nama = "Ananda Arya"
+	undefined
+	nama.length
+	11
+</html>

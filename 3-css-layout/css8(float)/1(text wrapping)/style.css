@@ -1,0 +1,11 @@
+.container{
+	width: 600px;
+	border: 1px solid black;
+	margin: auto;
+	padding: 5px;
+}
+
+img{
+	float: left;/* bisa none, left, right,*/
+	margin: 10px;
+}

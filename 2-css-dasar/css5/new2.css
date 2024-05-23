@@ -1,0 +1,15 @@
+h1{
+	font-size: 150px;
+	color: #be28dd; /* color: #be28dd; bisa menggunakan hexadesimal << atau rgb >>(190,40,221) atau nama warnanya *//* color: #be28dd; bisa menggunakan hexadesimal << atau rgb >>(190,40,221) atau nama warnanya */
+	text-decoration: line-through; /* none( menghilangkan garis misalnya dilink), underline(garis bawah), overline(garisatas), line-through(garis coret)*/
+	text-transform: uppercase; /* uppercase(huruf besar semua), lowercase(huruf kecil semua), capitalize(huruf kapital awalnya saja besar) */
+}
+p{
+	/*text-align: justify;*/
+	text-indent:  100px;
+	letter-spacing: 5px; /* spasi setiap huruf*/
+	word-spacing: 5px /* spasi antar kata */
+	
+}
+
+a{ text-decoration: none;}

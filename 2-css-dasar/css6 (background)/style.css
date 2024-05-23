@@ -1,0 +1,8 @@
+body{
+	background-color: white;
+	background-image: url(gambar/tree.jpg);
+	background-repeat: no-repeat; /* bisa memakai repeat-x, repeat-y dan no-repeat*/
+	background-position: bottom center; /* bisa dikombinasikan top right left center (x%, y%, x-pos, y-pos) */
+	
+	/* shorthand background (background: lightgreen url(bg1.jpg) top left no-repeat) */
+}

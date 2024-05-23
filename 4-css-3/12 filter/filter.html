@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			body{
+				text-align: center;
+			}
+
+			/* Filter
+				
+				filter:<tipe-filter>;
+			
+
+				blur(px)
+				brightness(angka | %)
+				contrast(angka | %)
+				saturate(angka | %)
+				grayscale(angka | %)
+				sepia(angka | %)
+				hue-rotate (deg)
+				invert(angka | %)
+				opacity(angka | %)
+				drop-shadow(sama seperti box-shadow)
+
+			*/
+
+			div{
+				float: left;
+				margin: 10px;
+			}
+
+			div img{
+				width: 300px;
+				height: 300px;
+			}
+
+			.satu img{
+				filter: blur(10px);
+			}
+
+			.dua img{
+				filter: brightness(110%); /* 1.1= 100% */
+			}
+
+			.tiga img{
+				filter: saturate(200%); /* semakin besar saturate maka semakin bewarna*/
+			}
+
+			.empat img{
+				filter: grayscale(100%);
+			}
+
+			.lima img{
+				filter: sepia(100%);
+			}
+
+			.enam img{
+				filter: hue-rotate(100deg); 
+			}
+
+			.tujuh img{
+				filter: invert(100%);
+			}
+
+			.delapan img{
+				filter: opacity(0.5);
+			}
+
+			.sembilan img{
+				filter: drop-shadow(5px 5px 3px black);	
+			}
+
+			.sepuluh img{
+				filter: blur(5px) grayscale(100%);
+
+			/* kalau ingin mengedit gambar secara realtime (tanoa memikirkan valuenya) maka ada sebuah website:
+			   html5-demos.appspot.com/ 
+			   */
+			}
+
+		</style>
+	</head>
+	<body>
+	<div class="satu">blur
+		<img src="../../../web1/musafir.jpg" alt="gambar">
+	</div>
+
+	<div class="dua">brightness
+		<img src="../../../web1/musafir.jpg" alt="gambar">
+	</div>
+
+	<div class="tiga">saturate
+		<img src="../../../web1/musafir.jpg" alt="gambar">
+	</div>
+
+	<div class="empat">grayscale
+		<img src="../../../web1/musafir.jpg" alt="gambar">
+	</div>
+
+	<div class="lima">sepia
+		<img src="../../../web1/musafir.jpg" alt="gambar">
+	</div>
+
+	<div class="enam">hue-rotate
+		<img src="../../../web1/musafir.jpg" alt="gambar">
+	</div>
+
+	<div class="tujuh">invert
+		<img src="../../../web1/musafir.jpg" alt="gambar">
+	</div>
+
+	<div class="delapan">opacity
+		<img src="../../../web1/musafir.jpg" alt="gambar">
+	</div>
+
+	<div class="sembilan">drop-shadow
+		<img src="../../../web1/nitendo3.png" alt="gambar">
+	</div>
+
+	<div class="sepuluh">blur, grayscale
+		<img src="../../../web1/musafir.jpg" alt="gambar">
+	</div>
+
+<!-- kalau ingin mengedit gambar secara realtime (tanoa memikirkan valuenya) maka ada sebuah website:
+			   html5-demos.appspot.com/ 
+			   -->
+
+	</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<style>
+
+		body{
+			margin: 50px 0px 0px 50px;
+		}
+
+		.satu{
+			width: 600px;
+			height: 300px;
+			background-image: radial-gradient(red 10%, green 20%, blue 80%);
+			float: left;
+		}
+
+		.dua{
+			width: 600px;
+			height: 300px;
+			background-image: radial-gradient(circle closest-corner, red, green, blue);
+			float: left;
+			margin-left: 20px;
+		}
+
+		.tiga{
+			width: 600px;
+			height: 300px;
+			background-image: radial-gradient(circle farthest-side at top right, red, blue);
+			float: left;	
+			margin-top: 20px;
+		}
+	</style>
+
+
+
+	<body>
+
+		<div class="satu"></div>
+		<div class="dua"></div>
+		<div class="tiga"></div>
+
+	</body>
+</html>
+
+<!-- 
+sintaks lengkap
+
+radial-gradient(
+	<tipe> <jangkauan> at <posisi-y> <posisi-x>,
+
+	<warna-1>
+	<warna-2>,
+	...,
+	<warna-n>
+);
+
+//	 tipe ada 2 = ellipse, circle
+// 	 jangkauan	= closest-corner
+				  jarak dari pusat gradient ke sudut terdekat elemen
+
+				  closest-side
+				  jarak dari pusat gradient ke sisi terdekat elemen
+
+				  farthest-corner
+				  jarak dari pusat gradien ke sudut terjauh elemen
+
+				  farthest-side
+				  jarak dari pusat gradient ke sisi terjauh elemen 
+
+ -->

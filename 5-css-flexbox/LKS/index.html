@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+    }
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.item1 {
+    grid-column: 1 / 5;
+}
+
+.item5 {
+    grid-column: 1/7;
+}
+
+.item6 {
+    grid-area: 2/7/11/8;
+    /* grid-row-start / grid-column-start / grid-row-end / grid-column-end. */
+}
+
+
+.item7 {
+    grid-row: 3/20;
+}
+
+.item8 {
+    grid-column: 2/7;
+    grid-row: 3/15;
+    /* grid-row: ; */
+}
+
+.item9 {
+    grid-area: 11/7/17/8;
+}
+
+.item10 {
+    grid-column: 2/7;
+    grid-row: 15/17;
+    /* grid-row: 8; */
+}
+
+/* .item9 {
+    
+} */
+</style>
+</head>
+<body>
+
+<h1>The grid-column Property</h1>
+
+<p>Use the <em>grid-column</em> property to specify where to place an item.</p>
+<p>Item1 will start on column 1 and end before column 5:</p>
+
+<div class="grid-container">
+    <div class="item1">Side title</div>
+    <div class="item2">Nav 1</div>
+    <div class="item3">Nav 2</div>  
+    <div class="item4">Nav 3</div>
+    <div class="item5">Post Title</div>
+    <div class="item6">Side bar</div>
+    <div class="item7">Post Meta</div>
+    <div class="item8">Main Content</div>  
+    <div class="item9">Ads</div>
+    <div class="item10">Main Content image</div>
+    <div class="item11">11</div>
+    <div class="item12">12</div>
+    <div class="item13">13</div>
+    <div class="item14">14</div>
+    <div class="item15">15</div>
+    <div class="item16">16</div>
+    <div class="item17">17</div>
+    <div class="item18">18</div>
+    <div class="item19">20</div>
+    <div class="item20">21</div>
+    <div class="item21">22</div>
+    <div class="item22">23</div>
+    <div class="item23">24</div>
+    <div class="item24">25</div>
+</div>
+
+</body>
+</html>

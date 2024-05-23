@@ -1,0 +1,5 @@
+Apa yang sudah kita buat sebelumnya (contact), aplikasi yang kita buat ini disebut dengan CLI
+atau Command Line Interface, karena aplikasi CLI berbeda dengan aplikasi WEB.
+
+NodeJS juga bisa kita gunakan untuk membuat web server, jadi dalam video kali ini kita akan
+mencoba membuat web server dengan Module-module yang ada di NodeJS dengan web server yang sederhana.

@@ -1,0 +1,42 @@
+Express JS
+"Fast, Unopinated, minimalist web framework for node JS"
+
+
+Express JS
+- Web App framework yang dibuat diatas NodeJS.
+- Menyediakan antarmuka yang minimal untuk tool yang diperlukan dalam membuat sebuah aplikasi web
+- Membantu pengelolaan aliran data dari server ke aplikasi
+- Mendukung Tech Stack, MERN, MEAN, MEVN (MongoDB, Express, React / Angular / Vue, NodejS)
+- Diciptakan oleh TJ Holowaychuck, pada tanggal 22 mei 2010
+
+Fitur ExpressJS
+- Menangani request dengan berbaga metode HTTP dengan mudah (Routes)
+- MVC (Model-View-Controller)
+- Terintegrasi dengan "view" rendering engine, untuk mengelola template
+- Middleware
+
+
+
+Opininated
+- Artinya aturan-aturan dalam membuat sesuatu sudah jelas diberikan oleh Frameworknya, 
+  contohnya : Ruby on Rails, di satu sisi sangat memudahkan kita untuk membuat sesuatu.
+  disisi yang lain jadi membuat kita strict (terbatas)
+
+Unopinated
+- Tidak ada aturan baku untuk membuat sesuatu
+- Flexibel
+- Menentukan sendiri struktur aplikasi
+- Bongkar pasang Middleware
+
+Express bisa terhubung ke Database
+- Cassandara
+- CouchBase
+- Oracle
+- MySQL
+- MongoDB
+- LevelDB
+- PosgreSQL
+- Redis
+- SQLite
+- ElasticSearch
+- dll

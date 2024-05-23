@@ -1,0 +1,34 @@
+.satu{										
+	width: 200px;
+	height: 200px;
+	background-color: lightgreen;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dua{
+	width: 100px;
+	height: 100px;
+	background-color: lightblue;
+	margin-left: auto;
+	margin-right: auto;
+}	
+
+.tiga{
+	width: 50px;
+	height: 50px;
+	background-color: violet;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* shorthand 
+	margin: 40px; berarti semua sisi sama 40px
+	margin: 40px 30px; bearti (atas-bawah, kanan-kiri,);
+	margin: 40px 30px 20px; bearti (atas,kanan-kiri, bawah);
+	margin: 40px 30px (atas-bawah, kanan-kiri);
+	
+	dihitung dari arah jarum jam atas, kanan, bawah, kiri.
+*/
+			
+

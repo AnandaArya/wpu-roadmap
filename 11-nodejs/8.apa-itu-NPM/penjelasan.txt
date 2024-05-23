@@ -1,0 +1,23 @@
+Apa itu NPM?
+dulunya adalah singkatan dari Node Package Manager!
+tapi sekarang artinya ada sedikit perubahan
+
+NPM adalah sebuah tempat dimana Programmer NodeJS itu menyimpan modulenya
+
+About npm
+npm, Inc. is a company founded in 2014, and was acquired by GitHub in 2020. 
+npm is a critical part of the JavaScript community and helps support one
+of the largest developer ecosystems in the world.
+npm is lots of things.
+
+npm is the package manager for Node.js. It was created in 2009 as an open source project to help JavaScript developers easily share packaged modules of code.
+
+The npm Registry is a public collection of packages of open-source code for Node.js, front-end web apps, mobile apps, robots, routers, and countless other needs of the JavaScript community.
+
+npm is the command line client that allows developers to install and publish those packages.
+
+
+1.0.0 = Semantic Version
+digit terakhir (3) = perubahan patch, kalau misalkan digitnya berubah artinya hanya perbaikan pada bugnya saja
+digit kedua (2) = perubahan minor, lebih banyak daripada patch tapi kemungkinan masih bisa dipakai
+digit pertama (1) = perubahan major

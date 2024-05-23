@@ -1,0 +1,29 @@
+ /* li:first-child a{color:green} li:last-child a{color: red;}(first-child)= Anak pertama (last-child)= Anak terakhir bisa memakai, :nth-child(n) li:nth-child(3) a{color: green}  */
+	
+/* n berarti kelipatan bisa menggunakan dengan pengurangan (-) misal li:nth-child(3-2n) a{color: green;} */
+li:nth-child(3n-2) a{ 
+	color: yellow;
+}
+
+/* (odd) untuk  ganjil) (even) untuk genap */
+li:nth-child(odd) a{
+	font-style: italic;
+	font-weight: bold;
+}
+
+li:nth-child(even) a{
+	font-style: italic;
+	font-variant: smallcaps;
+	font-weight: bold;
+	line-height: 10px;
+	font-size: 20px;
+	font-family: Arial;
+}
+	
+p:first-of-type{ /* bisa juga last-of-type untuk type tag p*/
+	color: red;
+}
+
+p:nth-of-type(even){
+	color: blue;
+}

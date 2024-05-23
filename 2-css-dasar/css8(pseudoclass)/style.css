@@ -1,0 +1,17 @@
+.hello:link{ /* style default pada sebuah link (yang meiliki href) */
+	color: orange;
+}
+
+.hello:hover{ /* style ketika kursor berada diatas sebuah link/elemen */
+	color: green;
+	font-family: arial;
+	font-size: 20px;
+}
+
+.hello:active{ /* style ketika sebuah link di-klik (keadaan aktif)*/
+	font-style: italic;
+}
+
+.hello:visited{ /* style ketika link sudah pernah dikunjungi sebelumnya (menggunakan browser yang sama) */
+	color: red;
+}

@@ -1,0 +1,18 @@
+/* p{
+	color: red;
+}
+p{
+	color: green;
+}
+dalam specifity dia akan mengambil yang tertimpa jadi warnanya berubah jadi hijau bukan meraj
+*/
+
+ul#sarapan li{
+	color: green;
+}
+
+ul#sarapan li.favorit{
+	color: red;
+}
+	
+/*cari cara agar lebih berat bila ingin lebih spesifik kalkulator specifity (http://specifity.keegan.st) */

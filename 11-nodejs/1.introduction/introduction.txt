@@ -1,0 +1,74 @@
+Apa itu NodeJS?
+
+"Node.js is a Javascrit runtime built on Chrome's v8 JavaScript Engine"
+"An Asnchronous event-driven Javascrit runtime, designed to build scalable network applications"
+-nodejs.org
+
+runtime?
+Dimana kita menjalankan / mengeksekusi code kita
+
+di Javascrit kita bisa melakukan banyak hal diantaranya
+1. Manipulasi DOM
+2. EventListener
+3. Interaktivitas
+4. HTTP Request
+
+Ryan Dahl (Pembuat Node JS)
+- 2009 membuat nodejs
+- Software Dev @ Joyent
+- github.com/Ryan
+- ingin membuat web server menggunakan event loop, bukan menggunakan thread
+
+Node JS
+- Memory
+- File System
+- I/O
+- network
+- dll
+
+Karakteristik Node JS
+1. Asynchronous & Event driven
+2. Non-Blocking
+3. Single threaded but Highly scalable
+4. Cross Platform
+5. MIT License
+
+
+Fitur Utama NodeJS
+1. File System
+2. Buffer
+3. Http & Https
+4. REPL (Read, Evaluate, Print, and Loop)
+5. Console
+6. Crypto
+7. Zlib
+- https://nodejs.org/dist/latest-v14x/docs/api
+
+____________________________________________________________
+| NodeJS                    vs PHP                          |
+|___________________________________________________________|
+| 1994                      | 2009                          |
+| Zend Engine               | Google v8 Engine              |
+| Multi-Thread, Synchronous | Single-Thread, Asynchronous   |
+| Apache / ISS              | Berjalan di runtime sendiri   |
+| Composer                  | NPM (Node Package Manager)    |
+|___________________________|_______________________________|
+
+NodeJS Cocok untuk..
+- Dynamic Single Page applications (SPA)
+- Realtime App (Chat, Multiplayer)
+- API 
+- Streaming App
+- Microservice
+- Command Line Tool
+- Tech Stack (MERN, MEAN, MEVN)
+
+
+Pre Requisite
+- JavaScript Basic
+- JavaScript Modern (ES6+ / 2015+)
+
+System & Software Requirement
+- Window / Linux / MacOS
+- Code Editor
+- Terminal / Command Prompt

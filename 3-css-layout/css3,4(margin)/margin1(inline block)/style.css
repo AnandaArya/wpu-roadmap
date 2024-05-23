@@ -1,0 +1,43 @@
+div{
+	display: inline-block;
+	
+	
+}
+
+.satu{										
+	width: 200px;
+	height: 200px;
+	background-color: lightgreen;
+}
+
+.dua{
+	width: 100px;
+	height: 100px;
+	background-color: lightblue;
+}	
+
+.tiga{
+	width: 50px;
+	height: 50px;
+	background-color: violet;
+}
+
+/* margin vertikal akan mengambil yanng terbesar dari pixelnya sementara horizontal bisa ditambah
+contoh vertikal
+	.satu{
+		margin-bottom: 150px;
+}
+	.dua{
+		margin-top: 50px;
+	}
+yang seperti ini(vertikal) akan di ambil nilai terbesar= 150px berbeda dengan horizontal
+contoh horizontal
+	.satu{
+		margin-right: 20px;
+	}
+	
+	.dua{
+		margin-left:30px;
+	}
+*/
+	

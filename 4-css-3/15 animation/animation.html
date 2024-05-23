@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Animation</title>
+    </head>
+    <!--
+     (nilai yang bisa kita beri di) animation:
+    [name] [duration] [timing-function]
+    [delay] [iteration-count] [direction]
+    [fill-mode] [play-state]
+
+    [timing function]               [iteration-count]:          [direction]           fill-mode                                 play-state
+		ease                            <angka> | infinite      normal|reverse        none                                      running | paused
+		ease-in                                                 alternate|            forwads (berhenti diakhir animasi)
+		ease-out                                                alternate-reverse     backwads
+		ease-out                                                                      both
+		ease-in-out
+		linear
+        cubicc-bezier(w,x,y,z)
+    
+     -->
+    <style>
+       .kotak{
+           width: 200px;
+           height: 200px;
+           background-color: salmon;
+           animation: animasikotak 3s ease infinite alternate forwards;
+        /* animation-name: ;
+           animation-duration: ;
+           animation-timing-function: ;
+           animation-iteration-count: ;
+        */
+       }
+       
+       .kotak:hover{
+           
+
+       }
+       
+        /* shorthand: animation: animasiKotak 2s ease infinite; */
+       @keyframes animasikotak{
+           0%{
+               width: 200px;
+
+           }
+
+           50%{
+               width: 500px;
+               height: 200px;
+           }
+
+           100%{
+               width: 500px;
+               height: 500px;
+           }
+
+           
+       }
+
+      
+
+    </style>
+    <body>
+        <div class="kotak"></div>
+    </body>
+</html>

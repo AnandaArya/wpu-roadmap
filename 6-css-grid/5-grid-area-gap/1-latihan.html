@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ddd;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+                'header header header'
+                'sidebar sidebar sidebar'
+                'content content content'
+                'footer footer footer';
+            /* grid-template-columns: 1fr max-content 1fr; */
+        }
+
+        .item {
+            width: 100%;
+            background-color: rgb(138, 209, 254);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 100px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: lightblue;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: rgb(255, 255, 188);
+        }
+
+
+        .content {
+            grid-area: content;
+            background-color: rgb(177, 255, 177);
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: lightgray;
+        }
+
+        /* Responsive breakpoint */
+
+        @media only screen and (min-width: 768px) {
+            .container {
+                grid-template-areas: 
+                    'header header header'
+                    'sidebar content content'
+                    'sidebar content content'
+                    'footer footer footer';
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item header">Header</div>
+        <div class="item sidebar">Sidebar</div>
+        <div class="item content">Content</div>
+        <div class="item footer">footer</div>
+    </div>
+</body>
+</html>

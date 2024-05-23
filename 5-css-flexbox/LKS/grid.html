@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.item1 {
+    grid-row: 1;
+    grid-column: 1 / span 4;
+    background-color: rgb(218, 218, 70);
+}
+
+.item2 {
+    grid-row: 1;
+    background-color: rgb(235, 161, 167);
+}
+
+.item3 {
+    grid-row: 1;
+    background-color: rgb(235, 161, 167);
+
+}
+
+.item4 {
+    grid-row: 1;
+    background-color: rgb(235, 161, 167);
+
+}
+
+.item5 {
+    grid-row: 2;
+    grid-column: 1 / span 6;
+    
+}
+
+.item6 {
+    grid-row: 2 / span 2;
+    grid-column: 7;
+    background-color: rgb(236, 178, 70);
+}
+
+.item7 {
+    grid-row: 3 / span 5;
+    grid-column: 1;
+    background-color: rgb(181, 218, 181);
+}
+
+.item8 {
+    height: 160px;
+    grid-row: 3 / span 2;
+    grid-column: 2 / span 5;
+    background-color: lightgrey;
+}
+
+.item9 {
+    grid-row: 4 / span 2;
+    grid-column: 7;
+    background-color: limegreen;
+}
+
+.item10 {
+    height: 160px;
+    grid-row: 5 / span 3;
+    grid-column: 2 /span 5;
+    background-color: yellow;
+}
+
+.item11 {
+    grid-row: 6 / span 2;
+    grid-column: 7;
+    background-color: violet;
+}
+
+.item12 {
+    grid-column: 1 / span 7;
+    grid-row: 8;
+    background-color: rgb(148, 138, 138);
+
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Grid Layout LKS</h1>
+
+<div class="grid-container">
+    <div class="grid-item item1">Side title</div>
+    <div class="grid-item item2">Nav 1</div>
+    <div class="grid-item item3">Nav 2</div>  
+    <div class="grid-item item4">Nav 3</div>
+    <div class="grid-item item5">Post Title</div>
+    <div class="grid-item item6">Side Bar</div>
+    <div class="grid-item item7">Post Meta</div>
+    <div class="grid-item item8">Main Content</div>
+    <div class="grid-item item9">Ads</div>
+    <div class="grid-item item10">Main Content Image</div>
+    <div class="grid-item item11">Orther Stuff</div>
+    <div class="grid-item item12">Footer</div>
+</div>
+
+</body>
+</html>

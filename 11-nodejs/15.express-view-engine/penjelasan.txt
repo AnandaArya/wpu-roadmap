@@ -1,0 +1,13 @@
+View / Template Engine
+- Memungkinkan kita membuat file template statis untuk aplikasi kita
+- Engine tersebut mengganti variable pada template kita dengan nilai sebenarnya, lalu menampilkan dalam bentuk HTML
+- Mempermudah pembuatan halaman HTML
+
+Untuk Template Enginenya Kali ini kita akan menggunakan EJS (Embedded Javascript Template) 
+https://ejs.co
+- Simple Syntax
+- Simple Setup
+- Speedy Execution
+- Easy Debugging
+- Active Development
+- Awalnya dibuat oleh pembuat Express
