@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box"></div>
+    <script src="1.script.js"></script>
+    <script>
+        // const box = document.querySelector('.box');
+        // box.addEventListener('click', function() {
+        //     this.classList.toggle('size');
+        //     // yang caption gak jalan, karena ketika kita menggunakan function 
+        //     // maka this disini dia akan berisi apapun yang ada diluarnya
+        //     // karena setTimeout ini dijalankan ketika hoisting maka dia poisisinya ada di global
+        //     // maka sekarang this ini isinya adalah window
+        //     setTimeout(function() {
+        //         this.classList.toggle('caption');
+        //     }, 600);
+        // });
+        
+        // Sebelum ada Arrow function maka cara ngakalinnya dengan membuat sebuah variabel untuk menyimpan this
+        const box = document.querySelector('.box');
+        box.addEventListener('click', function() {
+
+            let satu = 'size';
+            let dua = 'caption';
+
+            if(this.classList.contains(satu)) {
+                [satu, dua] = [dua, satu];
+            }
+
+            
+            this.classList.toggle(satu);
+            setTimeout(() => {
+                this.classList.toggle(dua);
+            }, 600);
+        });
+    </script>
+</body>
+</html>

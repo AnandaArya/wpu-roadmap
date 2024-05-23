@@ -1,0 +1,23 @@
+[
+    {
+        "nama": "Ananda Arya",
+        "nrp" : "043040020",
+        "email" : "ananda@gmail.com",
+        "jurusan" : "Teknik Informatika",
+        "idDosenWali" : 1 
+    },
+    {
+        "nama": "Doddy Ferdiansyah",
+        "nrp" : "043040123",
+        "email" : "doddy@gmail.com",
+        "jurusan" : "Teknik Informatika",
+        "idDosenWali" : 2 
+    },
+    {
+        "nama": "Erik",
+        "nrp" : "104040001",
+        "email" : "erik@gmail.com",
+        "jurusan" : "Teknik Informatika",
+        "idDosenWali" : 3 
+    }
+]
